@@ -31,3 +31,5 @@ set these between 0 and 1 to reduce the values, set them above 1 to increase the
 Don't worry about going over 255, any number above that will resolve itself to 255. 
 
 # Keys Guide 
+
+under construction . . . 
