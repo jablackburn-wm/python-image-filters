@@ -25,13 +25,12 @@ keys_table = {
 origin = 'RGB.jpg'
 folder = 'demos'
 name = 'demo'
-rmult = 1
-gmult = 1
-bmult = 1
+mult = [1, 1, 1]
+add = [0, 0, 0]
 keys = 'all_keys'
 
 print("eating pixels...")
 print("eating pixels...")
 print("eating pixels...")
 
-filter(origin, folder, name, rmult, gmult, bmult, keys_table[keys])
+filter(origin, folder, name, mult, add, keys_table[keys])

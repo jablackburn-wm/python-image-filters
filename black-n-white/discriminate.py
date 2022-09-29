@@ -21,11 +21,11 @@ def discriminate(path, highColor, lowColor, highSplit, lowSplit):
         b = p[2]
 
 
-        if ((g + r + b) // 3) <= highSplit:
+        if ((g + r + b) // 3) <= lowSplit:
             newr = highColor[0]
             newg = highColor[1]
             newb = highColor[2]
-        elif ((g + r + b) // 3) > lowSplit:
+        elif ((g + r + b) // 3) > highSplit:
             newr = lowColor[0]
             newg = lowColor[1]
             newb = lowColor[2]
