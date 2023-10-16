@@ -14,6 +14,11 @@ This is an ongoing project to create useful and unique image filters with python
 
 'silhouette' is used to color the outside of a dark outline black, effectively turning it into a reverse silhouette. 
 
+
+These programs are pretty old and un-polished. Most of the inputs have to be hard coded direclty into 
+the "main.py" files for each program. In the revamped iteration of this project in rust, I plan to handle inputs and organizing output elegantly with the command line.
+
+
 # filters
 
 ### ambiguous_filter.py
@@ -68,7 +73,7 @@ The all_keys keys include all of these variations, but you can use subsets of th
 ### main.py
 
 the main.py file is the file to execute when it comes time to filter some images. 
-first you will need to specify the origin, folder, name, mult array, add array, and args array by either defining their values or typing inputs at runtime. 
+first you will need to specify the origin, folder, name, mult array, add array, and args array by either defining their values or typing inputs at runtime. for simplicity, store inputs in an "inputs" directory, then create a folder to hold the outputs within an "outputs" directory
 
 # colorizer
 
@@ -113,7 +118,7 @@ For each pixel, the pixel values are averaged. if that average happens to be abo
 
 ### main.py
 
-this is the main file used to call the discriminate function. specify the arguments you want to use beforehand.
+this is the main file used to call the discriminate function. specify the arguments you want to use beforehand. Use an "Inputs" folder for simplicity and organization.
 
 # pixelizer
 
