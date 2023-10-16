@@ -1,6 +1,7 @@
 # Image Filters
 
 # Summary
+
 This is an ongoing project to create useful and unique image filters with python. 
 
 'filters' includes functions to filter images by swapping around and manipulating the pixel values. 
@@ -23,16 +24,8 @@ this is the base functionality behind all these filters. this file simply includ
 path is the path of the image being filtered. 
 
 rkey, gkey, and bkey correspond to the operation performed on the corresponding pixel value.
-Notice there is a dictionary within the function that links strings to expressions:
-    keydict = {
-                "r": p[0],
-                "b": p[1],
-                "g": p[2],
-                "rinvert": 255 - p[0],
-                "ginvert": 255 - p[1],
-                "binvert": 255 - p[2]
-            }
-the function retrieves the proper expression for each pixel value from the table based on the rkey/gkey/bkey that is passed in. 
+Notice there is a dictionary within the function that links strings to expressions.
+the function retrieves the proper expression for each pixel value from the table based on the rkey/gkey/bkey that is passed in. This allows for 
 
 mult is an array of numbers by which the pixel values will be multiplied. 
 mult[0] is applied to R, mult[1] is applied to G, and mult[2] is applied to B. 
@@ -142,6 +135,7 @@ path is the path of the image to be filtered.
 split is the target value used to stop the silhouetter.
 
 the sihouette function goes down the image row by row, moving in from both sides turning every pixel black until it reaches a pixel whose average value is less than the split. this way, you can turn the left and right side of a black outline black. 
+Honestly this program is very immature and broken; in the future I'd like to re-create this program utilizing the flood fill algorithm.
 
 ### main.py 
 
