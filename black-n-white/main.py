@@ -1,10 +1,10 @@
 from discriminate import discriminate
 
-path = 'image.jpeg'
-lowColor = [0, 0, 0]
-highColor = [255, 255, 255]
-highSplit = 100
-lowSplit = 150
+path = 'shaded-wfigure102.png'
+lowColor = [255, 255, 255]
+highColor = [0, 0, 0]
+highSplit = 255
+lowSplit = 100
 
 image = discriminate(path, highColor, lowColor, highSplit, lowSplit)
 image.save('black-white.jpg', optimize=True)

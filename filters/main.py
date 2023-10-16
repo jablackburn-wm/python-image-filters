@@ -22,9 +22,9 @@ keys_table = {
 # gmult = int(input("gmult:"))
 # bmult = int(input("bmult:"))
 
-origin = 'RGB.jpg'
-folder = 'demos'
-name = 'demo'
+origin = 'blue-shaded-wfigure102-black-white-purplized.png'
+folder = 'blue-shaded-wfigure102-black-white-purplized'
+name = 'blue-shaded-wfigure102-black-white-purplized'
 mult = [1, 1, 1]
 add = [0, 0, 0]
 keys = 'all_keys'

@@ -1,4 +1,5 @@
 from PIL import Image 
+import math
 
 def ambiguousFilter(path, rkey, gkey, bkey, mult, add):
     image = Image.open(path)
@@ -22,9 +23,9 @@ def ambiguousFilter(path, rkey, gkey, bkey, mult, add):
             "binvert": 255 - p[2]
         }
 
-        newr = ((keydict[rkey] * mult[0]) // 1) + add[0]
-        newg = ((keydict[gkey] * mult[1]) // 1) + add[1]
-        newb = ((keydict[bkey] * mult[2]) // 1) + add[2]
+        newr = (math.floor(keydict[rkey] * mult[0])) + add[0]
+        newg = (math.floor(keydict[gkey] * mult[1])) + add[1]
+        newb = (math.floor(keydict[bkey] * mult[2])) + add[2]
 
         new_pixels[pointer] = (newr, newg, newb)
 

@@ -20,8 +20,14 @@ def discriminate(path, highColor, lowColor, highSplit, lowSplit):
         g = p[1]
         b = p[2]
 
-
-        if ((g + r + b) // 3) <= lowSplit:
+        #deal with extremes
+        tolerance = 150
+        extreme = False
+        
+        if r > tolerance or g > tolerance or b > tolerance:
+            extreme = True
+            
+        if ((g + r + b) // 3) <= lowSplit and not extreme:
             newr = highColor[0]
             newg = highColor[1]
             newb = highColor[2]

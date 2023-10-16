@@ -1,10 +1,10 @@
 from colorizer import colorize_by_tolerance, colorize_by_range
 
 mode = 'tolerance'
-path = 'image.png'
-target = [150, 10, 10]
-tolerance = [30, 10, 10]
-new_color = (100, 200, 245)
+path = 'blue-shaded-wfigure102-black-white.jpg'
+target = [255, 255, 255]
+tolerance = [55, 55, 55]
+new_color = (255, 150, 250)
 
 # mode = 'range'
 # path = 'image.png'
